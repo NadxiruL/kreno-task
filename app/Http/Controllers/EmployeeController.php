@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Department;
 use App\Models\Employee;
-use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Spatie\Permission\Models\Role;
 
@@ -18,13 +17,10 @@ class EmployeeController extends Controller
     public function index()
     {
 
-        // $employees = Employee::with('department')->get();
-        // return view('employee.index', [
-        //     'employees' => $employees,
-        // ]);
-
-        $now = Carbon::now();
-        auth()->user();
+        $employees = Employee::with('department')->get();
+        return view('employee.index', [
+            'employees' => $employees,
+        ]);
 
     }
 
