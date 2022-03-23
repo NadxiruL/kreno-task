@@ -13,9 +13,7 @@
 
 <h3> System Description </h3>
 
-<ol>
-  <li>Run Composer install</li>
-  <li>Copy and rename env.example</li>
-  <li>Rename database</li>
-  <li> Run php artisan key:generate </li>
-</ol>
+<ul>
+  <li>System that allows the management to manage employees with different roles, department</li>
+  <li>Admin can manage/create employees , roles and departments</li>
+</ul>
