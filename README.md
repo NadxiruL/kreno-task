@@ -11,3 +11,11 @@
   <li> Run php artisan key:generate </li>
 </ul>
 
+<h3> System Description </h3>
+
+<ol>
+  <li>Run Composer install</li>
+  <li>Copy and rename env.example</li>
+  <li>Rename database</li>
+  <li> Run php artisan key:generate </li>
+</ol>
